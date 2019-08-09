@@ -3,7 +3,16 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
+//引入mint-ui
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+Vue.use(MintUI)
 
+// 导入 MUI 的样式
+import './assets/dist/css/mui.min.css'
+// 导入扩展图标样式
+import './assets/dist/css/icons-extra.css'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
