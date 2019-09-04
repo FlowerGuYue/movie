@@ -16,9 +16,7 @@
         
         <keep-alive>
             <router-view/>
-        </keep-alive>
-        
-        
+        </keep-alive>        
     </div>
    
 </template>
@@ -72,8 +70,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
 .movie_menu {
   width: 100%;
   height: 45px;

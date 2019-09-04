@@ -97,23 +97,44 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .tab span,i{
-        color:#000;
+    .tab span,i {
+  color: #000;
+}
+.tab .is-selected span,.tab .is-selected i {
+  color: #26a2ff;
+}
+.cinema_body {
+  flex: 1;
+  overflow: auto;
+  height: 500px;
+  ul {
+    padding: 20px;
+  }
+  li {
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+  }
+  div {
+    margin-bottom: 10px;
+  }
+  .q {
+    font-size: 11px;
+    color: #f03d37;
+  }
+  .price {
+    font-size: 18px;
+  }
+  .address {
+    font-size: 13px;
+    color: #666;
+    span {
+      &:nth-of-type(2) {
+        float: right;
+      }
     }
-    .tab .is-selected span,.tab .is-selected i{
-        color: #26a2ff;
-    }
-    .cinema_body{ flex:1; overflow:auto;}
-.cinema_body ul{ padding:20px;}
-.cinema_body li{  border-bottom:1px solid #e6e6e6; margin-bottom: 20px;}
-.cinema_body div{ margin-bottom: 10px;}
-.cinema_body .q{ font-size: 11px; color:#f03d37;}
-.cinema_body .price{ font-size: 18px;}
-.cinema_body .address{ font-size: 13px; color:#666;}
-.cinema_body .address span:nth-of-type(2){ float:right; }
-.cinema_body .card{ display: flex;}
-.cinema_body .card div{ padding: 0 3px; height: 18px; line-height: 18px; border-radius: 2px; color: #f90; border: 1px solid #f90; font-size: 13px; margin-right: 5px;}
-.cinema_body .card div.or{ color: #f90; border: 1px solid #f90;}
-.cinema_body .card div.bl{ color: #589daf; border: 1px solid #589daf;}
+  }
+}
+
+
 </style>
 
